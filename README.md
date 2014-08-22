@@ -30,6 +30,7 @@ curl -k \
 ```
 
 ## List
+Note: Each call will return 20 rows maximum. You can add a parameter '?page=PAGE_NUMBER' to get the next ones
 
 ### All your Libraries
 ```sh
@@ -74,6 +75,7 @@ curl -k \
 ```
 
 ## Create
+Note: add '.xml' to the URL to get XML response
 
 ### A library
 ```sh
@@ -103,6 +105,7 @@ curl -k \
 ```
 
 ## Update
+Note: add '.xml' to the URL to get XML response
 
 ### A library
 ```sh
@@ -132,6 +135,7 @@ curl -k \
 ```
 
 ### Delete
+Note: add '.xml' to the URL to get XML response
 
 ### A library
 ```sh
