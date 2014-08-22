@@ -65,3 +65,91 @@ $> curl -k \
         -H "Authorization: Bearer XXXXXTFkOTdiZmI3NTBkYTA2ODY3Y2ZiZDYyMjYzYjZkZWFjNGY3OGNjY2JmOTI2N2IxODlhYWNhMDRkMTk2NA" \
         -X GET https://www.datatheke.com/api/v2/collections/50bdea73138a769664000024/items
 ```
+
+### An item
+```sh
+$> curl -k \
+        -H "Authorization: Bearer XXXXXTFkOTdiZmI3NTBkYTA2ODY3Y2ZiZDYyMjYzYjZkZWFjNGY3OGNjY2JmOTI2N2IxODlhYWNhMDRkMTk2NA" \
+        -X GET https://www.datatheke.com/api/v2/collections/50bdea73138a769664000024/items/50bdea8c138a762671000003
+```
+
+## Create
+
+### A library
+```sh
+$> curl -k \
+        -H "Authorization: Bearer XXXXXTFkOTdiZmI3NTBkYTA2ODY3Y2ZiZDYyMjYzYjZkZWFjNGY3OGNjY2JmOTI2N2IxODlhYWNhMDRkMTk2NA" \
+        -H "Content-type: application/json" \
+        -d '{"name": "My brand new library", "description": Exemple for the API documentation"}' \
+        -X POST https://www.datatheke.com/api/v2/libraries
+```
+
+### A collection
+```sh
+$> curl -k \
+        -H "Authorization: Bearer XXXXXTFkOTdiZmI3NTBkYTA2ODY3Y2ZiZDYyMjYzYjZkZWFjNGY3OGNjY2JmOTI2N2IxODlhYWNhMDRkMTk2NA" \
+        -H "Content-type: application/json" \
+        -d '{"name": "Collection de test2", "fields": [{"label": "Username", "type": "string"}, {"label": "Birthdate", "type": "date"}]}' \
+        -X POST https://www.datatheke.com/api/v2/libraries/XXXXX
+```
+
+### An item
+```sh
+$> curl -k \
+        -H "Authorization: Bearer XXXXXTFkOTdiZmI3NTBkYTA2ODY3Y2ZiZDYyMjYzYjZkZWFjNGY3OGNjY2JmOTI2N2IxODlhYWNhMDRkMTk2NA" \
+        -H "Content-type: application/json" \
+        -d '{"_53f734fbbb8556cc01000006": "Bob Marley", "_53f734fbbb8556cc01000007": "06/02/1945"}' \
+        -X POST https://www.datatheke.com/api/v2/collections/XXXXX
+```
+
+## Update
+
+### A library
+```sh
+$> curl -k \
+        -H "Authorization: Bearer OTcwOWY1MjdhZWY2NGU5ZTBhZDgzNzRjZGY2NTdjZDJhMmJkMjQ0MGQxYjE4MjdjYjIyOGNhZWQ4ZjA0MmYwNA" \
+        -H "Content-type: application/json" \
+        -d '{"name": "Updated library", "description": "Updated description"}' \
+        -X PUT https://www.datatheke.com/api/v2/libraries
+```
+
+### A collection
+```sh
+$> curl -k \
+        -H "Authorization: Bearer OTcwOWY1MjdhZWY2NGU5ZTBhZDgzNzRjZGY2NTdjZDJhMmJkMjQ0MGQxYjE4MjdjYjIyOGNhZWQ4ZjA0MmYwNA" \
+        -H "Content-type: application/json" \
+        -d '{"name": "Updated collection", "fields": [{"label": "Singer"}, {"label": "Birthdate"}]}' \
+        -X PUT https://www.datatheke.com/api/v2/collections/XXXXX
+```
+
+### An item
+```sh
+$> curl -k \
+        -H "Authorization: Bearer OTcwOWY1MjdhZWY2NGU5ZTBhZDgzNzRjZGY2NTdjZDJhMmJkMjQ0MGQxYjE4MjdjYjIyOGNhZWQ4ZjA0MmYwNA" \
+        -H "Content-type: application/json" \
+        -d '{"_53f734fbbb8556cc01000006": "Frank Sinatra", "_53f734fbbb8556cc01000007": "12/12/1915"}' \
+        -X PUT https://www.datatheke.com/api/v2/collections/XXXXX/items/XXXXX
+```
+
+### Delete
+
+### A library
+```sh
+$> curl -k \
+        -H "Authorization: Bearer OTcwOWY1MjdhZWY2NGU5ZTBhZDgzNzRjZGY2NTdjZDJhMmJkMjQ0MGQxYjE4MjdjYjIyOGNhZWQ4ZjA0MmYwNA" \
+        -X DELETE https://www.datatheke.com/api/v2/libraries/XXXXX
+```
+
+### A collection
+```sh
+$> curl -k \
+        -H "Authorization: Bearer OTcwOWY1MjdhZWY2NGU5ZTBhZDgzNzRjZGY2NTdjZDJhMmJkMjQ0MGQxYjE4MjdjYjIyOGNhZWQ4ZjA0MmYwNA" \
+        -X DELETE https://www.datatheke.com/api/v2/collections/XXXXX
+```
+
+### An item
+```sh
+$> curl -k \
+        -H "Authorization: Bearer OTcwOWY1MjdhZWY2NGU5ZTBhZDgzNzRjZGY2NTdjZDJhMmJkMjQ0MGQxYjE4MjdjYjIyOGNhZWQ4ZjA0MmYwNA" \
+        -X DELETE https://www.datatheke.com/api/v2/collections/XXXXX/items/XXXXX
+```
