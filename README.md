@@ -110,7 +110,7 @@ Note: add '.xml' to the URL to get XML response
 ### A library
 ```sh
 curl -k \
-     -H "Authorization: Bearer OTcwOWY1MjdhZWY2NGU5ZTBhZDgzNzRjZGY2NTdjZDJhMmJkMjQ0MGQxYjE4MjdjYjIyOGNhZWQ4ZjA0MmYwNA" \
+     -H "Authorization: Bearer XXXXXTFkOTdiZmI3NTBkYTA2ODY3Y2ZiZDYyMjYzYjZkZWFjNGY3OGNjY2JmOTI2N2IxODlhYWNhMDRkMTk2NA" \
      -H "Content-type: application/json" \
      -d '{"name": "Updated library", "description": "Updated description"}' \
      -X PUT https://www.datatheke.com/api/v2/libraries
@@ -119,7 +119,7 @@ curl -k \
 ### A collection
 ```sh
 curl -k \
-     -H "Authorization: Bearer OTcwOWY1MjdhZWY2NGU5ZTBhZDgzNzRjZGY2NTdjZDJhMmJkMjQ0MGQxYjE4MjdjYjIyOGNhZWQ4ZjA0MmYwNA" \
+     -H "Authorization: Bearer XXXXXTFkOTdiZmI3NTBkYTA2ODY3Y2ZiZDYyMjYzYjZkZWFjNGY3OGNjY2JmOTI2N2IxODlhYWNhMDRkMTk2NA" \
      -H "Content-type: application/json" \
      -d '{"name": "Updated collection", "fields": [{"label": "Singer"}, {"label": "Birthdate"}]}' \
      -X PUT https://www.datatheke.com/api/v2/collections/XXXXX
@@ -128,7 +128,7 @@ curl -k \
 ### An item
 ```sh
 curl -k \
-     -H "Authorization: Bearer OTcwOWY1MjdhZWY2NGU5ZTBhZDgzNzRjZGY2NTdjZDJhMmJkMjQ0MGQxYjE4MjdjYjIyOGNhZWQ4ZjA0MmYwNA" \
+     -H "Authorization: Bearer XXXXXTFkOTdiZmI3NTBkYTA2ODY3Y2ZiZDYyMjYzYjZkZWFjNGY3OGNjY2JmOTI2N2IxODlhYWNhMDRkMTk2NA" \
      -H "Content-type: application/json" \
      -d '{"_53f734fbbb8556cc01000006": "Frank Sinatra", "_53f734fbbb8556cc01000007": "12/12/1915"}' \
      -X PUT https://www.datatheke.com/api/v2/collections/XXXXX/items/XXXXX
@@ -140,20 +140,20 @@ Note: add '.xml' to the URL to get XML response
 ### A library
 ```sh
 curl -k \
-     -H "Authorization: Bearer OTcwOWY1MjdhZWY2NGU5ZTBhZDgzNzRjZGY2NTdjZDJhMmJkMjQ0MGQxYjE4MjdjYjIyOGNhZWQ4ZjA0MmYwNA" \
+     -H "Authorization: Bearer XXXXXTFkOTdiZmI3NTBkYTA2ODY3Y2ZiZDYyMjYzYjZkZWFjNGY3OGNjY2JmOTI2N2IxODlhYWNhMDRkMTk2NA" \
      -X DELETE https://www.datatheke.com/api/v2/libraries/XXXXX
 ```
 
 ### A collection
 ```sh
 curl -k \
-     -H "Authorization: Bearer OTcwOWY1MjdhZWY2NGU5ZTBhZDgzNzRjZGY2NTdjZDJhMmJkMjQ0MGQxYjE4MjdjYjIyOGNhZWQ4ZjA0MmYwNA" \
+     -H "Authorization: Bearer XXXXXTFkOTdiZmI3NTBkYTA2ODY3Y2ZiZDYyMjYzYjZkZWFjNGY3OGNjY2JmOTI2N2IxODlhYWNhMDRkMTk2NA" \
      -X DELETE https://www.datatheke.com/api/v2/collections/XXXXX
 ```
 
 ### An item
 ```sh
 curl -k \
-     -H "Authorization: Bearer OTcwOWY1MjdhZWY2NGU5ZTBhZDgzNzRjZGY2NTdjZDJhMmJkMjQ0MGQxYjE4MjdjYjIyOGNhZWQ4ZjA0MmYwNA" \
+     -H "Authorization: Bearer XXXXXTFkOTdiZmI3NTBkYTA2ODY3Y2ZiZDYyMjYzYjZkZWFjNGY3OGNjY2JmOTI2N2IxODlhYWNhMDRkMTk2NA" \
      -X DELETE https://www.datatheke.com/api/v2/collections/XXXXX/items/XXXXX
 ```
